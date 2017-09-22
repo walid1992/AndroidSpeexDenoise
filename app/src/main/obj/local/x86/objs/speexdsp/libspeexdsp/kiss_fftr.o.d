@@ -1,29 +1,25 @@
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/obj/local/x86/objs/speexdsp/./libspeexdsp/kiss_fftr.o: \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/kiss_fftr.c \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/kiss_fftr.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/kiss_fft.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/_kiss_fft_guts.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/math_approx.h
+./obj/local/x86/objs/speexdsp/./libspeexdsp/kiss_fftr.o: \
+  jni/./libspeexdsp/kiss_fftr.c jni/./libspeexdsp/os_support.h \
+  jni/./libspeexdsp/kiss_fftr.h jni/./libspeexdsp/kiss_fft.h \
+  jni/./libspeexdsp/arch.h jni/include/speex/speexdsp_types.h \
+  jni/include/speex/speexdsp_config_types.h \
+  jni/./libspeexdsp/fixed_generic.h jni/./libspeexdsp/_kiss_fft_guts.h \
+  jni/./libspeexdsp/math_approx.h
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h:
+jni/./libspeexdsp/os_support.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/kiss_fftr.h:
+jni/./libspeexdsp/kiss_fftr.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/kiss_fft.h:
+jni/./libspeexdsp/kiss_fft.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h:
+jni/./libspeexdsp/arch.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h:
+jni/include/speex/speexdsp_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h:
+jni/include/speex/speexdsp_config_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h:
+jni/./libspeexdsp/fixed_generic.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/_kiss_fft_guts.h:
+jni/./libspeexdsp/_kiss_fft_guts.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/math_approx.h:
+jni/./libspeexdsp/math_approx.h:

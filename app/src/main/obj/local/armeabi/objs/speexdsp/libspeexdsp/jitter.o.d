@@ -1,20 +1,18 @@
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/obj/local/armeabi/objs/speexdsp/./libspeexdsp/jitter.o: \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/jitter.c \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speex_jitter.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h
+./obj/local/armeabi/objs/speexdsp/./libspeexdsp/jitter.o: \
+  jni/./libspeexdsp/jitter.c jni/./libspeexdsp/arch.h \
+  jni/include/speex/speexdsp_types.h \
+  jni/include/speex/speexdsp_config_types.h \
+  jni/./libspeexdsp/fixed_generic.h jni/include/speex/speex_jitter.h \
+  jni/./libspeexdsp/os_support.h
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h:
+jni/./libspeexdsp/arch.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h:
+jni/include/speex/speexdsp_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h:
+jni/include/speex/speexdsp_config_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h:
+jni/./libspeexdsp/fixed_generic.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speex_jitter.h:
+jni/include/speex/speex_jitter.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h:
+jni/./libspeexdsp/os_support.h:

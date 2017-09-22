@@ -1,23 +1,20 @@
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/obj/local/x86/objs/speexdsp/./libspeexdsp/fftwrap.o: \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fftwrap.c \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/kiss_fftr.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/kiss_fft.h
+./obj/local/x86/objs/speexdsp/./libspeexdsp/fftwrap.o: \
+  jni/./libspeexdsp/fftwrap.c jni/./libspeexdsp/arch.h \
+  jni/include/speex/speexdsp_types.h \
+  jni/include/speex/speexdsp_config_types.h \
+  jni/./libspeexdsp/fixed_generic.h jni/./libspeexdsp/os_support.h \
+  jni/./libspeexdsp/kiss_fftr.h jni/./libspeexdsp/kiss_fft.h
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h:
+jni/./libspeexdsp/arch.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h:
+jni/include/speex/speexdsp_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h:
+jni/include/speex/speexdsp_config_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h:
+jni/./libspeexdsp/fixed_generic.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h:
+jni/./libspeexdsp/os_support.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/kiss_fftr.h:
+jni/./libspeexdsp/kiss_fftr.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/kiss_fft.h:
+jni/./libspeexdsp/kiss_fft.h:

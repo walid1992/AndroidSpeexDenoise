@@ -1,30 +1,34 @@
-package com.cyril.speexnoisecancel;
+package com.walid.speex;
 
-/**
- * Created by xuan on 2017/8/17.
- */
 import android.media.MediaPlayer;
 import android.util.Log;
 
-public class UPlayer{
+/**
+ * Author   : walid
+ * Date     : 2017-09-22  11:31
+ * Describe :
+ */
+
+public class UPlayer {
 
     private final String TAG = UPlayer.class.getName();
     private String path;
 
     private MediaPlayer mPlayer;
-    public UPlayer(String path){
+
+    public UPlayer(String path) {
         this.path = path;
     }
 
 
     public boolean start() {
         try {
-            if(mPlayer == null) {
+            if (mPlayer == null) {
                 mPlayer = new MediaPlayer();
                 mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                     @Override
                     public void onCompletion(MediaPlayer mp) {
-                        Log.d("UPlayer","onCompletion");
+                        Log.d("UPlayer", "onCompletion");
                         stop();
                     }
                 });
@@ -34,7 +38,7 @@ public class UPlayer{
             mPlayer.prepare();
             //播放
             mPlayer.start();
-        }catch(Exception e){
+        } catch (Exception e) {
             Log.e(TAG, "prepare() failed");
         }
 
@@ -43,7 +47,7 @@ public class UPlayer{
 
 
     public boolean stop() {
-        if(mPlayer != null) {
+        if (mPlayer != null) {
             mPlayer.stop();
             mPlayer.release();
             mPlayer = null;

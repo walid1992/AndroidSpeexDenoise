@@ -1,23 +1,20 @@
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/obj/local/x86/objs/speexdsp/./libspeexdsp/filterbank.o: \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/filterbank.c \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/filterbank.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/math_approx.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h
+./obj/local/x86/objs/speexdsp/./libspeexdsp/filterbank.o: \
+  jni/./libspeexdsp/filterbank.c jni/./libspeexdsp/filterbank.h \
+  jni/./libspeexdsp/arch.h jni/include/speex/speexdsp_types.h \
+  jni/include/speex/speexdsp_config_types.h \
+  jni/./libspeexdsp/fixed_generic.h jni/./libspeexdsp/math_approx.h \
+  jni/./libspeexdsp/os_support.h
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/filterbank.h:
+jni/./libspeexdsp/filterbank.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h:
+jni/./libspeexdsp/arch.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h:
+jni/include/speex/speexdsp_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h:
+jni/include/speex/speexdsp_config_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h:
+jni/./libspeexdsp/fixed_generic.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/math_approx.h:
+jni/./libspeexdsp/math_approx.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h:
+jni/./libspeexdsp/os_support.h:

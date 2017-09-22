@@ -1,26 +1,23 @@
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/obj/local/armeabi/objs/speexdsp/./libspeexdsp/scal.o: \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/scal.c \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speex_echo.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/vorbis_psy.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h \
-  /Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/smallft.h
+./obj/local/armeabi/objs/speexdsp/./libspeexdsp/scal.o: \
+  jni/./libspeexdsp/scal.c jni/include/speex/speex_echo.h \
+  jni/include/speex/speexdsp_types.h \
+  jni/include/speex/speexdsp_config_types.h \
+  jni/./libspeexdsp/vorbis_psy.h jni/./libspeexdsp/arch.h \
+  jni/./libspeexdsp/fixed_generic.h jni/./libspeexdsp/os_support.h \
+  jni/./libspeexdsp/smallft.h
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speex_echo.h:
+jni/include/speex/speex_echo.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_types.h:
+jni/include/speex/speexdsp_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/include/speex/speexdsp_config_types.h:
+jni/include/speex/speexdsp_config_types.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/vorbis_psy.h:
+jni/./libspeexdsp/vorbis_psy.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/arch.h:
+jni/./libspeexdsp/arch.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/fixed_generic.h:
+jni/./libspeexdsp/fixed_generic.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/os_support.h:
+jni/./libspeexdsp/os_support.h:
 
-/Users/xuan/Documents/demo/SpeexDemo/SpeexNoiseCancel/app/src/main/jni/./libspeexdsp/smallft.h:
+jni/./libspeexdsp/smallft.h:

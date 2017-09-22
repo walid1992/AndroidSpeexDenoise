@@ -1,4 +1,4 @@
-package com.cyril.speexnoisecancel;
+package com.walid.speex;
 
 import android.media.AudioFormat;
 import android.media.AudioRecord;
@@ -19,13 +19,12 @@ import java.nio.channels.FileChannel;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Speex mSpeex;
+    Speex speex;
 
     Button startRecordBtn;
     Button startRecordBtn1;
     Button stopRecordBtn;
     Button startPlayBtn;
-
 
     private int audioSource = MediaRecorder.AudioSource.MIC;
     // 设置音频采样率，44100是目前的标准，但是某些设备仍然支持22050，16000，11025
@@ -39,15 +38,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     boolean isRecording = false;
 
-
     private AudioRecord audioRecord;
 
     UPlayer mPlayer;
-    //RawAudioName裸音频数据文件
+    // RawAudioName裸音频数据文件
     private static final String RawAudioName = "/sdcard/record_speex.raw";
-    //WaveAudioName可播放的音频文件
+    // WaveAudioName可播放的音频文件
     private static final String WaveAudioName = "/sdcard/record_speex.wav";
-
 
     boolean isDenoiseMode = false;
 
@@ -56,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mSpeex = new Speex();
+        speex = new Speex();
 
         startRecordBtn = (Button) findViewById(R.id.start_record);
         startRecordBtn1 = (Button) findViewById(R.id.start_record1);
@@ -71,22 +68,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startPlayBtn.setOnClickListener(this);
 
         mPlayer = new UPlayer(WaveAudioName);
-        creatAudioRecord();
+        createAudioRecord();
     }
 
-    private void creatAudioRecord() {
+    private void createAudioRecord() {
         // 获得缓冲区字节大小
-        bufferSizeInBytes = AudioRecord.getMinBufferSize(sampleRateInHz,
-                channelConfig, audioFormat);
-        mSpeex.CancelNoiseInit(bufferSizeInBytes,sampleRateInHz);
+        bufferSizeInBytes = AudioRecord.getMinBufferSize(sampleRateInHz, channelConfig, audioFormat);
+        speex.init(bufferSizeInBytes, sampleRateInHz);
         // 创建AudioRecord对象
-        audioRecord = new AudioRecord(audioSource, sampleRateInHz,
-                channelConfig, audioFormat, bufferSizeInBytes);
+        audioRecord = new AudioRecord(audioSource, sampleRateInHz, channelConfig, audioFormat, bufferSizeInBytes);
     }
 
     private void startRecord() {
-        if(audioRecord == null){
-            creatAudioRecord();
+        if (audioRecord == null) {
+            createAudioRecord();
         }
 
         audioRecord.startRecording();
@@ -101,7 +96,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void close() {
-        mSpeex.CancelNoiseDestroy();
+        speex.destroy();
         if (audioRecord != null) {
             System.out.println("stopRecord");
             audioRecord.stop();
@@ -119,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    Toast.makeText(MainActivity.this,"录制完成",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "录制完成", Toast.LENGTH_SHORT).show();
                 }
             });
         }
@@ -143,8 +138,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         while (isRecording == true) {
             readsize = audioRecord.read(audiodata, 0, bufferSizeInBytes);
 
-            if(isDenoiseMode) {
-                mSpeex.CancelNoisePreprocess(audiodata);
+            if (isDenoiseMode) {
+                speex.preprocess(audiodata);
             }
 
             if (AudioRecord.ERROR_INVALID_OPERATION != readsize) {
@@ -163,7 +158,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void  WriteWav (final String rawFileName, final String wavFileName){
+    private void WriteWav(final String rawFileName, final String wavFileName) {
 
         new Thread(new Runnable() {
             @Override
@@ -307,25 +302,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    private void startPlay(){
+    private void startPlay() {
         mPlayer.start();
     }
 
 
-    private void stopPlay(){
+    private void stopPlay() {
         mPlayer.stop();
     }
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.start_record:
-                if(!isRecording) {
+                if (!isRecording) {
                     isDenoiseMode = false;
                     startRecord();
                 }
                 break;
             case R.id.start_record1:
-                if(!isRecording) {
+                if (!isRecording) {
                     isDenoiseMode = true;
                     startRecord();
                 }

@@ -16,7 +16,7 @@
 
 SpeexPreprocessState *st;
 
-jint Java_com_cyril_speexnoisecancel_Speex_CancelNoiseInit(JNIEnv* env,jobject this,jint frame_size, jint sample_rate)
+jint Java_com_walid_speex_Speex_init(JNIEnv* env,jobject this,jint frame_size, jint sample_rate)
 {
 
    int i;
@@ -40,7 +40,7 @@ jint Java_com_cyril_speexnoisecancel_Speex_CancelNoiseInit(JNIEnv* env,jobject t
    return 1;
 }
 
-jint Java_com_cyril_speexnoisecancel_Speex_CancelNoisePreprocess(JNIEnv* env,jobject this,jbyteArray buffer)
+jint Java_com_walid_speex_Speex_preprocess(JNIEnv* env,jobject this,jbyteArray buffer)
 {
     char * inbuffer = (*env)->GetByteArrayElements(env,buffer, 0);
 
@@ -53,7 +53,7 @@ jint Java_com_cyril_speexnoisecancel_Speex_CancelNoisePreprocess(JNIEnv* env,job
     return vad;
 }
 
-jint Java_com_cyril_speexnoisecancel_Speex_CancelNoiseDestroy(JNIEnv* env,jobject this)
+jint Java_com_walid_speex_Speex_destroy(JNIEnv* env,jobject this)
 {
    if(st != NULL)
        speex_preprocess_state_destroy(st);
